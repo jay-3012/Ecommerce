@@ -1,0 +1,31 @@
+{
+  "name": "artisians",
+  "version": "1.0.0",
+  "description": "Mern project for the Ecommerce for Artisians",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix Public && npm run build --prefix Public"
+  },
+  "repository": {
+    "type": "git",
+    "start":"node app.js",
+    "dev":"nodemon app.js",
+    "url": "git+https://github.com/abhi948/E-commerce-website.git"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi948/E-commerce-website/issues"
+  },
+  "homepage": "https://github.com/abhi948/E-commerce-website#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.3"
+  }
+}
